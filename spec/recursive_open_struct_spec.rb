@@ -1,5 +1,4 @@
-require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
-require 'recursive_open_struct'
+require 'spec_helper'
 
 describe RecursiveOpenStruct do
   

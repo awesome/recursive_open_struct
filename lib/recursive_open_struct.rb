@@ -1,4 +1,4 @@
-require 'ostruct'
+require "ostruct"
 
 class RecursiveOpenStruct < OpenStruct
   
@@ -54,3 +54,5 @@ class RecursiveOpenStruct < OpenStruct
   end
 
 end
+
+require "recursive_open_struct/version"
