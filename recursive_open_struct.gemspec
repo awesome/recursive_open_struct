@@ -4,8 +4,18 @@
 Gem::Specification.new do |gem|
   gem.authors       = ["SoAwesomeMan"]
   gem.email         = ["callme@1800aweso.me"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{RecursiveOpenStruct is a subclass of OpenStruct. It differs from
+OpenStruct in that it allows nested hashes to be treated in a recursive
+fashion. For example:
+
+    ros = RecursiveOpenStruct.new({ :a => { :b => 'c' } })
+    ros.a.b # 'c'
+
+Also, nested hashes can still be accessed as hashes:
+
+    ros.a_as_a_hash # { :b => 'c' }
+}
+  gem.summary       = %q{OpenStruct subclass that returns nested hash attributes as RecursiveOpenStructs}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
